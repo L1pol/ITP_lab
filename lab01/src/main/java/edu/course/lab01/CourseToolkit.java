@@ -23,7 +23,6 @@ public final class CourseToolkit {
         if (number < 2) {
             return false;
         }
-        // Внимание: используем <=, чтобы корректно обработать квадраты простых (например, 49)
         for (int divisor = 2; divisor * divisor <= number; divisor++) {
             if (number % divisor == 0) {
                 return false;
@@ -58,7 +57,7 @@ public final class CourseToolkit {
         if (values == null || values.length == 0) {
             throw new IllegalArgumentException("Массив не может быть null или пустым");
         }
-        long sum = 0; // Используем long, чтобы избежать переполнения
+        long sum = 0;
         for (int value : values) {
             sum += value;
         }
