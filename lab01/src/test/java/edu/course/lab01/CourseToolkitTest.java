@@ -66,7 +66,7 @@ class CourseToolkitTest {
 
     @Test
     void isPalindromeIsCaseSensitive() {
-        assertFalse(CourseToolkit.isPalindrome("AbA"));
+        assertFalse(CourseToolkit.isPalindrome("Мадам"));
     }
 
     @Test
